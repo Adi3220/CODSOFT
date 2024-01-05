@@ -1,7 +1,7 @@
 //TASK-2:Student Grade Calculator
 import java.util.*;
 
-public class java2 {
+public class codsoft_2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
