@@ -1,11 +1,11 @@
-import java.util.Random;
 import java.util.Scanner;
+import java.util.Random;
 
 public class java1 {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        Random random = new Random();
+        Scanner sc = new Scanner(System.in);
+        Random r = new Random();
         int least = 1;
         int most = 100;
         int maxAttempts = 20;
@@ -14,7 +14,7 @@ public class java1 {
         System.out.println("Welcome to the Number Game! \nYou will get 20 attempts to guess the number \nAll the Best, guess in less attempts!");
 
         do {
-            int targetNumber = random.nextInt(most - least + 1) + least;
+            int targetNumber = r.nextInt(most - least + 1) + least;
             System.out.println("I have generated a number between " + least + " and " + most + ". Try to guess it!");
 
             int attempts = 0;
@@ -22,7 +22,7 @@ public class java1 {
 
             while (attempts < maxAttempts) {
                 System.out.print("Enter your guess: ");
-                int userGuess = scanner.nextInt();
+                int userGuess = sc.nextInt();
                 attempts++;
 
                 if (userGuess == targetNumber) {
@@ -43,7 +43,7 @@ public class java1 {
             }
 
             System.out.print("Do you want to play again? (y/n): ");
-        } while (scanner.next().equalsIgnoreCase("y"));
+        } while (sc.next().equalsIgnoreCase("y"));
 
         System.out.println("Thank you for playing! Your final score is: " + score);
     }
