@@ -1,7 +1,7 @@
 //TASK-1:Number Game
 import java.util.*;
 
-public class java1 {
+public class codsoft_1 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
